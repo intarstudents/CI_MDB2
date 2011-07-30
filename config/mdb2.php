@@ -13,14 +13,14 @@
  */
 
 // Set DSN as array
-//$config["phptype"] 		= "mysql";
-//$config["protocol"] 		= "";
-//$config["hostspec"] 		= "localhost";
-//$config["username"] 		= "user";
-//$config["password"] 		= "pass";
-//$config["database"] 		= "mdb2";
-//$config["proto_opts"] 	= "";
-//$config["option"] 			= "charset=utf8";
+//$config["phptype"] = "mysql";
+//$config["protocol"] = "";
+//$config["hostspec"] = "localhost";
+//$config["username"] = "user";
+//$config["password"] = "pass";
+//$config["database"] = "mdb2";
+//$config["proto_opts"] = "";
+//$config["option"] = "charset=utf8";
 
 // Set DSN as string (if set will overwrite DSN array set)
 //$config["dsn"] = "mysql://user:pass@localhost/mdb2?charset=utf8";
