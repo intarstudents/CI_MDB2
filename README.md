@@ -15,7 +15,13 @@ Configuration
 --------------------
 
 CI_MDB2 isn't your regular CI library. It's more like "loader" for your MDB2 instance, so it better blends into CI hierarchy. 
-When you load new CI_MDB2 `$this->load->library('mdb2')` it will by default create two new objects in super CI object:
+When you load new CI_MDB2:
+
+    $this->load->library('mdb2', array(
+	  	"dsn" => "mysql://user:password@host/yourdb"
+	  ));
+
+It will by default create two new objects in super CI object:
 
 * $CI->mdb2 // Loader instance
 * $CI->db // MDB2 instance
@@ -27,4 +33,4 @@ From here now you don't have to load new "Loader instance" for adding new MDB2 i
 	  	"object_name" => "db2"
 	  ));
 
-This will create new MDB2 object `$CI->db2` that is connected to `differenthost`
+This will create new MDB2 object `$CI->db2` that is connected to `differenthost`.
